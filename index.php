@@ -29,8 +29,8 @@ $scripts = []; // put any scripts here
         <!-- Primary Navigation -->
         <ul>
           <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li>Works</li>
+          <li>Connect</li>
         </ul>
         <!-- Secondary Navigation  -->
         <ul>
