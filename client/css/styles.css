@@ -1,0 +1,82 @@
+/**********************/
+/**   MAIN STYLING   **/
+/**********************/
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+body {
+  font-family: 'Scope One', serif;
+}
+
+/**********************/
+/** HOMEPAGE STYLING **/
+/**********************/
+#yetti-wrap {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+/* Set Logo and Navigation Side-by-Side:  */
+#logo-wrap {
+  display: inline-block;
+}
+#main-menu {
+  display: inline-block;
+}
+/* Stylize Logo Icon  */
+#logo-wrap > img:first-child {
+  border: 15px solid blue;
+  border-radius: 300px; 
+  -moz-border-radius: 250px;
+  -webkit-border-radius: 250px;
+}
+/* Position Tree Icon  */
+#logo-wrap > img:last-child {
+
+}
+/* Stylize Primary and Secondary Navigation  */
+/* Primary Nav  */
+#main-menu > ul:first-child {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 8em;
+  list-style: none;
+  color: lightgrey;
+  text-shadow: 1px 2px 1px rgb(61, 61, 61);
+}
+#main-menu > ul:first-child > li:hover {
+  color: orangered;
+}
+/* Secondary Nav  */
+#main-menu > ul:nth-child(even) {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 3em;
+  list-style: none;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.746);
+  color: rgb(135, 0, 95);
+}
+/* Secondary Nav: Set Side-by-Side  */
+#main-menu > ul:nth-child(even) > li {
+  display: inline;
+  padding: 10px 30px;
+  background-color: rgb(197, 54, 197);
+  border-radius: 15px;
+  text-align: center;
+}
+#main-menu > ul:nth-child(even) > li:hover {
+  background-color: yellowgreen;
+}
+/* Position Moon Icon  */
+footer > img:first-child {
+  float: right;
+  padding: 15px;
+}
+/* Center Footer crafted with Care text  */
+footer > p {
+  text-align: center;
+  clear: right; /* keeps footer beneath floated moon icon  */
+}
+
+footer > p > span#globe {
+  position: relative;
+  top: 1px;
+}
