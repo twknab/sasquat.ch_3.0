@@ -16,13 +16,13 @@ $scripts = []; // put any scripts here
   <?php include(ROOT_PATH."/server/includes/header.php") ?>
   <body>
     <!-- Wrapper  -->
-    <div id="yetti-wrap">
+    <div id="yetti-wrap" class="flex-container">
       <!-- Logo Wrapper  -->
       <div id="logo-wrap">
         <!-- Logo  -->
-        <img src="http://unsplash.it/500/500?gravity=center" alt="Sasquatch Web Development and Design, Welcome to the Den"/>
+        <img src="../client/images/logo.png" alt="Sasquatch Web Development and Design, Welcome to the Den"/>
         <!-- Tree Icon -->
-        <img src="http://unsplash.it/100/100?gravity=center" alt="Western Hemlock Tree"/>
+        <!-- <img src="../client/images/redwood.png" alt="Redwood Tree"/> -->
       </div>
       <!-- Main Menu -->
       <div id="main-menu">
@@ -41,9 +41,9 @@ $scripts = []; // put any scripts here
       <!-- Footer  -->
       <footer>
         <!-- Moon Icon  -->
-        <img src="http://unsplash.it/100/100?gravity=center" alt="Crescent Moon Shimmering"/>
+        <img src="../client/images/moon.png" alt="Crescent Moon Shimmering"/>
         <!-- Crafted Care Text  -->
-        <p>Hand-crafted with consciousness <span id="globe">🌎</span> and care for your enjoyment.</p>
+        <p>Hand-crafted with consciousness <span id="globe">🌎</span> and care for your viewing pleasure.</p>
       </footer>
     </div>
   </body>

@@ -8,27 +8,44 @@
 body {
   font-family: 'Scope One', serif;
 }
+h1, h2, h3, h4, h5, h6, p {
+  text-shadow: 1px 1px #484848;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /**********************/
 /** HOMEPAGE STYLING **/
 /**********************/
-#yetti-wrap {
-  /* display: grid; */
+body {
+  background-color: #9C0FFB;
+  color: #b6b6b6;
+}
+#yetti-wrap, .flex-container {
+  display: inline-flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   /* grid-template-columns: 1fr 1fr; */
 }
 /* Set Logo and Navigation Side-by-Side:  */
 #logo-wrap {
-  display: inline-block;
+  /* display: inline-block; */
 }
 #main-menu {
-  display: inline-block;
+  /* display: inline-block; */
 }
 /* Stylize Logo Icon  */
 #logo-wrap > img:first-child {
-  border: 15px solid blue;
-  border-radius: 300px; 
-  -moz-border-radius: 250px;
-  -webkit-border-radius: 250px;
+  /* width: 50%; */
+  /* height: 50%; */
+  /* border: 15px solid orangered; */
+  /* border-radius: 500px;  */
+  /* -moz-border-radius: 500px; */
+  /* -webkit-border-radius: 500px; */
 }
 /* Position Tree Icon  */
 #logo-wrap > img:last-child {
@@ -38,32 +55,55 @@ body {
 /* Primary Nav  */
 #main-menu > ul:first-child {
   font-family: 'Bungee Shade', cursive;
-  font-size: 8em;
+  font-size: 6em;
   list-style: none;
-  color: lightgrey;
+  color: #8E0BE6;
   text-shadow: 1px 2px 1px rgb(61, 61, 61);
+  flex-grow: 2;
 }
 #main-menu > ul:first-child > li:hover {
-  color: orangered;
+  color: #C7EA00;
+  cursor: pointer;
 }
 /* Secondary Nav  */
 #main-menu > ul:nth-child(even) {
   font-family: 'Pacifico', sans-serif;
-  font-size: 3em;
+  font-size: 3.5em;
   list-style: none;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.746);
-  color: rgb(135, 0, 95);
+  text-shadow: 1px 1px 0px rgba(61, 61, 61);
+  /* color: rgb(135, 0, 95); */
+  color: #7B0FC5;
+  ;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 3em;
+  /* text-align: center; */
 }
 /* Secondary Nav: Set Side-by-Side  */
 #main-menu > ul:nth-child(even) > li {
   display: inline;
-  padding: 10px 30px;
-  background-color: rgb(197, 54, 197);
+  justify-items: right;
+  padding: 0px 30px;
+  /* background-color: #E419C5; */
+  background-color: #8E0BE6;
   border-radius: 15px;
   text-align: center;
+  margin-right: .2em;
+  box-shadow: 1px 2px 2px #444;
+  border: 5px solid #8E0BE6;
+  -webkit-box-shadow: 1px 2px 2px #444;
+  -moz-box-shadow: 1px 2px 2px #444;
 }
 #main-menu > ul:nth-child(even) > li:hover {
-  background-color: yellowgreen;
+  /* background-color: #C7EA00; */
+  /* color: white; */
+  /* color: rgb(121, 9, 196); */
+  color: #C7EA00;
+  border: 5px solid #C7EA00;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
 }
 /* Position Moon Icon  */
 footer > img:first-child {
