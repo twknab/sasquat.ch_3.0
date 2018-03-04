@@ -16,7 +16,7 @@ $scripts = []; // put any scripts here
   <?php include(ROOT_PATH."/server/includes/header.php") ?>
   <body>
     <!-- Wrapper  -->
-    <div id="yetti-wrap" class="flex-container">
+    <div id="yetti-wrap">
       <!-- Logo Wrapper  -->
       <div id="logo-wrap">
         <!-- Logo  -->
@@ -31,6 +31,8 @@ $scripts = []; // put any scripts here
           <li>Services</li>
           <li>Works</li>
           <li>Connect</li>
+          <li class="mobile-only">About</li>
+          <li class="mobile-only">Policies</li>
         </ul>
         <!-- Secondary Navigation  -->
         <ul>
@@ -40,8 +42,10 @@ $scripts = []; // put any scripts here
       </div>
       <!-- Footer  -->
       <footer>
+        <div id="moon">
         <!-- Moon Icon  -->
-        <img src="../client/images/moon.png" alt="Crescent Moon Shimmering"/>
+          <img src="../client/images/moon.png" alt="Crescent Moon Shimmering"/>
+        </div>
         <!-- Crafted Care Text  -->
         <p>Hand-crafted with consciousness <span id="globe">🌎</span> and care for your viewing pleasure.</p>
       </footer>

@@ -10,6 +10,7 @@
     <meta name="author" content="Nothing here but a foot print...and, say, what's that musty odor?">
     <title><?= $title ?></title>
     <link rel="stylesheet" href="../../client/css/styles.css">
+    <link rel="stylesheet" href="../../client/css/normalize.css">
     <script src="../../client/js/main.js"></script>
   <?php if (isset($scripts) && count($scripts) > 0) {
   foreach ($scripts as $script) { ?>
