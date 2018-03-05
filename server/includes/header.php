@@ -11,6 +11,7 @@
     <title><?= $title ?></title>
     <link rel="stylesheet" href="../../client/css/styles.css">
     <link rel="stylesheet" href="../../client/css/normalize.css">
+    <script src="../../client/js/jquery-3.3.1.min.js"></script>
     <script src="../../client/js/main.js"></script>
   <?php if (isset($scripts) && count($scripts) > 0) {
   foreach ($scripts as $script) { ?>

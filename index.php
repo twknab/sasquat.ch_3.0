@@ -1,4 +1,11 @@
 <?php
+session_start(); // start session
+// Check if user has visited before to determine if to show welcome message:
+if (!isset($_SESSION["has_visited"])) {
+  $_SESSION["has_visited"] =  0;
+} else {
+  $_SESSION["has_visited"] += 1;
+}
 // Gets local root foler:
 $path = realpath(dirname(__FILE__));
 define("ROOT_PATH", $path);
@@ -9,12 +16,19 @@ $keywords = "Web Design, Web Development, Web Application Design, Web Applicatio
 // Description:
 $description = "Web development and design; helping you reach your web application and website goals.";
 // Any scripts go here (must be full paths)
-$scripts = []; // put any scripts here
+$scripts = ["../client/js/homepage.js",]; // put any scripts here
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <?php include(ROOT_PATH."/server/includes/header.php") ?>
   <body>
+    <data id="has-visited" data-has-visited="<?php 
+      if (isset($_SESSION["has_visited"])) { 
+        echo $_SESSION["has_visited"];  
+      }?>"></data>
+    <div id="wilkommen">
+      <p><span class="coolify">Welcome!</span> Have a look around <span class="emoji-adjust">👀</span>  and enjoy your stay!</p>
+    </div>
     <!-- Wrapper  -->
     <div id="yetti-wrap">
       <!-- Logo Wrapper  -->
@@ -36,8 +50,8 @@ $scripts = []; // put any scripts here
         </ul>
         <!-- Secondary Navigation  -->
         <ul>
-          <li>About</li>
-          <li>Policies</li>
+          <li class="shake">About</li>
+          <li class="shake">Policies</li>
         </ul>
       </div>
       <!-- Footer  -->

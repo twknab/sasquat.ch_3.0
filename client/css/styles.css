@@ -1,12 +1,83 @@
 /**********************/
 /**   MAIN STYLING   **/
 /**********************/
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Scope+One');
-@import url('https://fonts.googleapis.com/css?family=Faster+One');
+
+/*
+Attributes you might want to break into "feature queries":
+- animation
+- transform
+- any vh or vm measurements
+- 
+
+*/
+
+/* -------------------------------- */
+/* CSS FOR SELF HOSTED GOOGLE FONTS */
+/* -------------------------------- */
+/* bungee-shade-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bungee-shade-v3-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url('../fonts/bungee-shade-v3-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/bungee-shade-v3-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/bungee-shade-v3-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/bungee-shade-v3-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/bungee-shade-v3-latin_latin-ext-regular.svg#BungeeShade') format('svg');
+  /* Legacy iOS */
+}
+/* bungee-inline-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Bungee Inline';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bungee-inline-v3-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Bungee Inline'), local('BungeeInline-Regular'), url('../fonts/bungee-inline-v3-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/bungee-inline-v3-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/bungee-inline-v3-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/bungee-inline-v3-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/bungee-inline-v3-latin_latin-ext-regular.svg#BungeeInline') format('svg');
+  /* Legacy iOS */
+}
+
+/* pacifico-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pacifico-v12-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url('../fonts/pacifico-v12-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/pacifico-v12-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pacifico-v12-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/pacifico-v12-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/pacifico-v12-latin_latin-ext-regular.svg#Pacifico') format('svg');
+  /* Legacy iOS */
+}
+/* scope-one-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Scope One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/scope-one-v3-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Scope One'), local('ScopeOne-Regular'), url('../fonts/scope-one-v3-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/scope-one-v3-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/scope-one-v3-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/scope-one-v3-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/scope-one-v3-latin_latin-ext-regular.svg#ScopeOne') format('svg');
+  /* Legacy iOS */
+}
+/* ----------------------------- */
+/* END SELF HOSTED GOOGLE FONTS  */
+/* ----------------------------- */
+
 body {
   font-family: 'Scope One', serif;
+  background-image: url("../images/bg.png");
 }
 h1, h2, h3, h4, h5, h6, p {
   text-shadow: 1px 1px #484848;
@@ -23,6 +94,31 @@ body {
   background-color: #9C0FFB;
   color: #b6b6b6;
 }
+.has-visited {
+  display: none;
+}
+#wilkommen {
+  background-color: #00FFFF;
+  margin: 0px;
+  display: none;
+  max-height: 210px;
+}
+#wilkommen > p {
+  margin: 0px;
+  padding: 30px;
+  color: #444;
+  font-size: 2em;
+  font-family: 'Pacifico','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px whitesmoke;
+}
+#wilkommen > p > .emoji-adjust {
+  top: 2px;
+}
+.coolify {
+  font-family: 'Bungee Inline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.2em;
+}
 #yetti-wrap {
   display: inline-flex;
   display: -webkit-inline-flex; /* Safari */
@@ -37,6 +133,7 @@ body {
 #logo-wrap {
   display: inline-block;
   align-self: center;
+  margin-top: 30px;
 }
 #main-menu {
   display: inline-block;
@@ -46,14 +143,37 @@ body {
 #logo-wrap > img:first-child {
   margin-bottom: 30px;
 }
-/* Position Tree Icon  */
-#logo-wrap > img:last-child {
-
+/* Give wiggle effect to primary menu items  */
+#main-menu>ul>li:hover {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both; /* Only works in modern browsers */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+/* CSS shake effect using transform and animation property! This will only work for modern browsers!  */
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 /* Stylize Primary and Secondary Navigation  */
 /* Primary Nav  */
 #main-menu > ul:first-child {
-  font-family: 'Bungee Shade', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Bungee Inline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 6.5em;
   list-style: none;
   color: #8E0BE6;
@@ -134,6 +254,10 @@ footer > p > span#globe {
   position: relative;
   top: 1px;
 }
+.emoji-adjust {
+  position: relative;
+  top: 1px;
+}
 
 /**********************/
 /**   MEDIA QUERIES  **/
@@ -149,13 +273,17 @@ footer > p > span#globe {
   }
 }
 @media only screen and (max-width: 644px) {
+  /* Add margin space to top of logo  */
+  #logo-wrap {
+    margin-top: 80px;
+  }
   /* Show mobile only nav items  */
   .mobile-only {
     display: block;
   }
   /* Shrink main menu font size */
   #main-menu>ul:first-child {
-    font-size: 12vw;
+    font-size: 14vw;
     margin-right: auto;
     margin-left: auto;
     padding: 0px;
@@ -165,23 +293,7 @@ footer > p > span#globe {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  /* Colorize mobile menu */
-  #main-menu>ul>li:nth-child(even) {
-
-  }
-  #main-menu>ul>li:nth-child(odd) {
-
-  }
-  /* Mobile Hover Effects  */
-
-  /* Adjust font size of buttons */
-  #main-menu>ul:nth-child(2n) {
-    font-size: 10vw;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* Stack secondary menu  */
+  /* Hide secondary menu at mobile */
   #main-menu>ul:nth-child(2n)>li {
     display: none;
   }

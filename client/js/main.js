@@ -1,1 +1,5 @@
-// alert("hello der");
+$(document).ready(function () {
+
+  // Put side-wide JS here.
+
+});
