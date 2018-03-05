@@ -66,6 +66,16 @@ body {
   color: #D9FF00;
   cursor: pointer;
 }
+/* Colorize Main Menu Hovers */
+#main-menu>ul>li:nth-child(odd):hover {
+  color: #D9FF00;
+}
+#main-menu>ul>li:nth-child(even):hover {
+  color: #00FFFF;
+}
+/* #main-menu>ul>li:nth-child(3):hover {
+  color: #FF7000;
+} */
 /* Hide mobile only nav items  */
 .mobile-only {
   display: none;
@@ -95,9 +105,14 @@ body {
   -webkit-box-shadow: 1px 2px 2px #444;
   -moz-box-shadow: 1px 2px 2px #444;
 }
-#main-menu > ul:nth-child(even) > li:hover {
+#main-menu > ul:nth-child(even) > li:nth-child(odd):hover {
   color: #D9FF00;
   border: 5px solid #D9FF00;
+  cursor: pointer;
+}
+#main-menu > ul:nth-child(even) > li:nth-child(even):hover {
+  color: #00FFFF;
+  border: 5px solid #00FFFF;
   cursor: pointer;
 }
 footer {
@@ -144,14 +159,7 @@ footer > p > span#globe {
     margin-right: auto;
     margin-left: auto;
     padding: 0px;
-    background-color: #8834ba;
     padding: 30px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    box-shadow: 1px 2px 5px #484848;
-    -webkit-box-shadow: 1px 2px 5px #484848;
-    -moz-box-shadow: 1px 2px 5px #484848;
   }
   #main-menu>ul>li {
     margin-top: 10px;
@@ -159,16 +167,13 @@ footer > p > span#globe {
   }
   /* Colorize mobile menu */
   #main-menu>ul>li:nth-child(even) {
-    color: #00E4FF;
+
   }
   #main-menu>ul>li:nth-child(odd) {
-    color: #D9FF00;
+
   }
   /* Mobile Hover Effects  */
-  #main-menu>ul>li:hover {
-    color: whitesmoke !important;
-    text-shadow: 0px 0px 4px #A73BF0 !important;
-  }
+
   /* Adjust font size of buttons */
   #main-menu>ul:nth-child(2n) {
     font-size: 10vw;
