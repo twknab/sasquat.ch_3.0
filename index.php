@@ -12,7 +12,7 @@ define("ROOT_PATH", $path);
 // Page title:
 $title = "Web Design and Development | Sasquat.ch";
 // Keywords (as string with keywords separated by commas):
-$keywords = "Web Design, Web Development, Web Application Design, Web Application Development";
+$keywords = "Web Design, Web Development, Web Applications, Professional Web Services, Full Stack Developer";
 // Description:
 $description = "Web development and design; helping you reach your web application and website goals.";
 // Any scripts go here (must be full paths)
@@ -34,7 +34,7 @@ $scripts = ["../client/js/homepage.js",]; // put any scripts here
       <!-- Logo Wrapper  -->
       <div id="logo-wrap">
         <!-- Logo  -->
-        <img src="../client/images/logo.png" alt="Sasquatch Web Development and Design, Welcome to the Den"/>
+        <img src="../client/images/logo.png" alt="Sasquatch Web Development and Design, Professional Web Services"/>
         <!-- Tree Icon -->
         <!-- <img src="../client/images/redwood.png" alt="Redwood Tree"/> -->
       </div>
@@ -50,8 +50,8 @@ $scripts = ["../client/js/homepage.js",]; // put any scripts here
         </ul>
         <!-- Secondary Navigation  -->
         <ul>
-          <li class="shake">About</li>
-          <li class="shake">Policies</li>
+          <li>About</li>
+          <li>Policies</li>
         </ul>
       </div>
       <!-- Footer  -->
