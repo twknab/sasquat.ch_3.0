@@ -8,6 +8,9 @@
     <meta name="description" content="<?= $description ?>">
     <meta name="keywords" content="<?= $keywords ?>">
     <meta name="author" content="Nothing here but a foot print...and, say, what's that musty odor?">
+    <!-- REMOVE THIS FOR PRODUCTION  -->
+    <meta name="robots" content="nofollow" />
+    <!-- REMOVE THE ABOVE FOR PRODUCTION  -->
     <title><?= $title ?></title>
     <link rel="stylesheet" href="../../client/css/styles.css">
     <link rel="stylesheet" href="../../client/css/normalize.css">
