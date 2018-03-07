@@ -22,6 +22,18 @@ $scripts = ["../client/js/homepage.js",]; // put any scripts here
 <html lang="en">
   <?php include(ROOT_PATH."/server/includes/header.php") ?>
   <body>
+  <audio id="audioMain">
+    <source src="../client/audio/ding.mp3"></source>
+    <source src="../client/audio/ding.ogg"></source>
+  </audio>
+  <audio id="audioSecondary">
+    <source src="../client/audio/ting.mp3"></source>
+    <source src="../client/audio/ting.ogg"></source>
+  </audio>
+  <audio id="audioLogo">
+    <source src="../client/audio/growl.mp3"></source>
+    <source src="../client/audio/growl.ogg"></source>
+  </audio>
     <data id="has-visited" data-has-visited="<?php 
       if (isset($_SESSION["has_visited"])) { 
         echo $_SESSION["has_visited"];  
@@ -34,7 +46,7 @@ $scripts = ["../client/js/homepage.js",]; // put any scripts here
       <!-- Logo Wrapper  -->
       <div id="logo-wrap">
         <!-- Logo  -->
-        <img src="../client/images/logo.png" alt="Sasquatch Web Development and Design, Professional Web Services"/>
+        <img src="../client/images/logo.png" class="zoom-tilt" alt="Sasquatch Web Development and Design, Professional Web Services"/>
         <!-- Tree Icon -->
         <!-- <img src="../client/images/redwood.png" alt="Redwood Tree"/> -->
       </div>
@@ -42,16 +54,16 @@ $scripts = ["../client/js/homepage.js",]; // put any scripts here
       <div id="main-menu">
         <!-- Primary Navigation -->
         <ul>
-          <li>Services</li>
-          <li>Works</li>
-          <li>Connect</li>
-          <li class="mobile-only">About</li>
-          <li class="mobile-only">Policies</li>
+          <li id="services">Services</li>
+          <li id="works">Works</li>
+          <li id="connect">Connect</li>
+          <li class="about mobile-only">About</li>
+          <li class="policies mobile-only">Policies</li>
         </ul>
         <!-- Secondary Navigation  -->
         <ul>
-          <li>About</li>
-          <li>Policies</li>
+          <li class="about">About</li>
+          <li class="policies">Policies</li>
         </ul>
       </div>
       <!-- Footer  -->

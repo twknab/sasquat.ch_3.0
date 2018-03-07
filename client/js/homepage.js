@@ -20,6 +20,80 @@ $(document).ready(function () {
   $( "#yetti-wrap" ).hide();
   $( "#yetti-wrap" ).fadeIn(1500);
 
+  // Get sound elements at top of page:
+  let soundPrimary = $( "#audioMain"  )[0],
+    soundSecondary = $( "#audioSecondary" )[0],
+    soundLogo = $( "#audioLogo" )[0];
+
+  // On main menu primary hover, make sound:
+  $( "#main-menu > ul:first-child > li" ).hover(
+    function () {
+      soundPrimary.play();
+    }, function () {
+      // stuff to do off hover
+      soundPrimary.pause();
+    }
+  );
+
+  // On main menu secondary hover, make sound:
+  $( "#main-menu > ul:last-child > li" ).hover(
+    function () {
+      soundSecondary.play();
+    }, function () {
+      // stuff to do off hover
+      soundSecondary.pause();
+    }
+  );
+  // On logo hover, make sound:
+  $( "#logo-wrap > img:first-child" ).hover(
+    function () {
+      soundLogo.play();
+    }, function () {
+      // stuff to do off hover
+      // soundLogo.pause();
+    }
+  );
+
+  // On "Services" click:
+  $( "#services" ).click(function () {
+    $( "#yetti-wrap"  ).slideUp(500, function() {
+      // do stuff after slide up here
+      // AKA, AJAX
+      // $( "#yetti-wrap"  ).slideDown(500);
+    });
+  });
+  // On "Works" click:
+  $( "#works" ).click(function () {
+    $( "#yetti-wrap"  ).slideUp(500, function() {
+      // do stuff after slide up here
+      // AKA, AJAX
+      // $( "#yetti-wrap"  ).slideDown(500);
+    });
+  });
+  // On "Connect" click:
+  $( "#connect" ).click(function () {
+    $( "#yetti-wrap"  ).slideUp(500, function() {
+      // do stuff after slide up here
+      // AKA, AJAX
+      // $( "#yetti-wrap"  ).slideDown(500);
+    });
+  });
+  // On "About" click:
+  $( ".about" ).click(function () {
+    $( "#yetti-wrap"  ).slideUp(500, function() {
+      // do stuff after slide up here
+      // AKA, AJAX
+      // $( "#yetti-wrap"  ).slideDown(500);
+    });
+  });
+  // On "Policies" click:
+  $( ".policies" ).click(function () {
+    $( "#yetti-wrap"  ).slideUp(500, function() {
+      // do stuff after slide up here
+      // AKA, AJAX
+      // $( "#yetti-wrap"  ).slideDown(500);
+    });
+  });
 
 
   // create string literal for ascii art:
