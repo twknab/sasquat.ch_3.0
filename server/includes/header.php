@@ -12,6 +12,7 @@
     <meta name="robots" content="nofollow" />
     <!-- REMOVE THE ABOVE FOR PRODUCTION  -->
     <title><?= $title ?></title>
+    <link rel="icon" href="../client/images/fav.png">
     <link rel="stylesheet" href="../../client/css/styles.css">
     <link rel="stylesheet" href="../../client/css/normalize.css">
     <script src="../../client/js/jquery-3.3.1.min.js"></script>
