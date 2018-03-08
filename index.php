@@ -10,7 +10,7 @@ if (!isset($_SESSION["has_visited"])) {
 $path = realpath(dirname(__FILE__));
 define("ROOT_PATH", $path);
 // Page title:
-$title = "Web Design and Development | Sasquat.ch";
+$title = "Website Design and Development | Sasquat.ch";
 // Keywords (as string with keywords separated by commas):
 $keywords = "Web Design, Web Development, Web Applications, Professional Web Services, Full Stack Developer";
 // Description:
